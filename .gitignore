@@ -1,0 +1,13 @@
+# Ignora archivos del sistema Mac 
+.DS_store
+
+# Ignora todos los archivos zip
+*.zip
+
+# Ignora los archivos pertenecientes al mockup
+*.pdf
+*.bmpr
+
+# Ignora los directorios de las clases
+material
+test 
