@@ -7,7 +7,6 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Lexend:wght@100..900&family=Lily+Script+One&display=swap" rel="stylesheet">
 
     <title>Lanzamientos del Año | Booksy</title>
@@ -30,17 +29,21 @@
     <main class="contenedor-contenido">
         <section>
             <p>Encuentra las próximas novedades literarias...</p>
-            <img src="../img/sort.png" alt="Ordenar por fecha de publicación"><span>Fecha de publicación</span>
+            <div class="botones-grid">
+                <img src="../img/sort.png" alt="Ordenar por fecha de publicación"><span>Fecha de publicación</span>
+            </div>
         </section>
         
-        <section>
+        <section class="libros">
             <article>
                 <img src="../img/book-placeholder.png" alt="Libro 1">
                 <h2>Título Libro 1</h2>
                 <p class="autor"><span class="negritas">Autor:</span> Nombre Autor 1</p>
                 <p><span class="negritas">Fecha de Publicación:</span> 29 de Abril</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi officiis ex esse perspiciatis soluta facere dolore quis vitae delectus ullam, qui cum ipsam culpa eius quod id aliquid aliquam totam!</p>
-                <a href="https://www.amazon.com.mx/" class="link-compra"><img src="../img/shopping-cart.png" alt="Comprar Libro 1">Amazon</a>
+                <div class="link-compra">
+                    <a href="https://www.amazon.com.mx/"><img src="../img/shopping-cart.png" alt="Comprar Libro 1">Amazon</a>
+                </div>
             </article>
 
             <article>
@@ -49,7 +52,9 @@
                 <p class="autor"><span class="negritas">Autor:</span> Nombre Autor 2</p>
                 <p><span class="negritas">Fecha de Publicación:</span> 29 de Abril</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi officiis ex esse perspiciatis soluta facere dolore quis vitae delectus ullam, qui cum ipsam culpa eius quod id aliquid aliquam totam!</p>
-                <a href="https://www.amazon.com.mx/" class="link-compra"><img src="../img/shopping-cart.png" alt="Comprar Libro 2">Amazon</a>
+                <div class="link-compra">
+                    <a href="https://www.amazon.com.mx/"><img src="../img/shopping-cart.png" alt="Comprar Libro 2">Amazon</a>
+                </div>
             </article>
 
             <article>
@@ -58,13 +63,13 @@
                 <p class="autor"><span class="negritas">Autor:</span> Nombre Autor 3</p>
                 <p><span class="negritas">Fecha de Publicación:</span> 29 de Abril</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi officiis ex esse perspiciatis soluta facere dolore quis vitae delectus ullam, qui cum ipsam culpa eius quod id aliquid aliquam totam!</p>
-                <a href="https://www.amazon.com.mx/" class="link-compra"><img src="../img/shopping-cart.png" alt="Comprar Libro 3">Amazon</a>
+                <div class="link-compra">
+                    <a href="https://www.amazon.com.mx/"><img src="../img/shopping-cart.png" alt="Comprar Libro 3">Amazon</a>
+                </div>
             </article>
         </section>
 
-        <section>
-            <a href="#top" class="boton-volver">Volver al inicio</a>
-        </section>
+        <a href="#top" class="boton-volver">Volver al inicio</a>
     </main>
 
     <footer class="contenedor-footer">
