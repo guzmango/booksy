@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../styles/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Lexend:wght@100..900&family=Lily+Script+One&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Lexend:wght@100..900&family=Lily+Script+One&display=swap" rel="stylesheet">
 
     <title>Contacto | Booksy</title>
@@ -28,27 +32,40 @@
     </header>
 
     <main class="contenedor-contenido">
-        <form>
-            <label for="nombre">Nombre: </label>
-            <input type="text" id="nombre" name="nombre">
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-
-            <label for="mensaje">Mensaje:</label>
-            <textarea name="mensaje" id="mensaje"></textarea>
-
-            <label for="genero">Genero:</label>
-            <select name="genero" id="genero">
-                <option value="desconocido">Prefiero no decirlo</option>
-                <option value="hombre">Hombre</option>
-                <option value="mujer">Mujer</option>
-            </select>
-
-            <input type="checkbox" name="newsletter" id="newsletter"><label for="newsletter">Suscribirte al Newsletter</label>
-
-            <button type="submit">Enviar</button>
-        </form>
+        <div class="container">
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre: </label>
+                    <input type="text" class="form-control form-control-lg" id="nombre" name="nombre">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="name@example.com">
+                </div>
+    
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea class="form-control form-control-lg" name="mensaje" id="mensaje" rows="3"></textarea>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="genero" class="form-label">Genero:</label>
+                    <select name="genero" id="genero" class="form-select form-select-lg mb-3" aria-label="Seleccionar Genero">
+                        <option value="desconocido">Prefiero no decirlo</option>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                    </select>
+                </div>
+    
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input" type="checkbox" role="switch" name="newsletter" id="newsletter">
+                    <label class="form-check-label" for="newsletter">Suscribirte al Newsletter</label>
+                </div>
+    
+                <button type="submit" class="btn btn-primary btn-lg mb-3">Enviar</button>
+            </form>
+        </div>
     </main>
 
     <footer class="contenedor-footer">
@@ -62,5 +79,7 @@
             <a href="https://www.youtube.com/"><img src="../img/icons8-youtube-48.png" alt="YouTube"></a>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
