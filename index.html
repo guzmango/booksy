@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Lexend:wght@100..900&family=Lily+Script+One&display=swap" rel="stylesheet">
+
+    <title>Home | Booksy</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="./img/booksy.png" alt="logo" class="logo"></a>
+        <!-- usar h1 una sola vez por archivo por temas de SEO y accesibilidad -->
+        <!-- no saltear tags jerarquicos -->
+        <h1>Bienvenidos a Booksy!</h1> 
+        <nav>
+            <!-- menu de navegación -->
+            <!-- se debe poder ir de cualquier pagina hacia otra -->
+            <!-- mismo header y mismo footer en todas las paginas -->
+            <ul class="nav-menu">
+                <li><a href="./pages/lecturas.html">Lecturas del año</a></li>
+                <li><a href="./pages/lanzamientos.html">Lanzamientos del año</a></li>
+                <li><a href="./pages/wishlist.html">Wishlist</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="top">
+            <h2>Libros Favoritos del Año</h2>
+
+            <img src="./img/placeholder.png" alt="Carrusel Libros Favoritos" class="img-carrousel">
+            
+            <!-- agregar imagenes con redireccionamiento por id (enlace interno) -->
+            <p>No olvides seguirnos en nuestras <a href="#link-footer">redes sociales</a>.</p>
+        </section>
+        <section>
+            <h2>Próximos Lanzamientos</h2>
+            <article>
+                <img src="./img/book-placeholder.png" alt="Libro 1">
+                <span>29 de Abril</span>
+            </article>
+            
+            <article>
+                <img src="./img/book-placeholder.png" alt="Libro 2">
+                <span>04 de Mayo</span>
+            </article>
+
+            <article>
+                <img src="./img/book-placeholder.png" alt="Libro 3">
+                <span>18 de Junio</span>
+            </article>
+
+            <article>
+                <img src="./img/book-placeholder.png" alt="Libro 4">
+                <span>05 de Agosto</span>
+            </article>
+        </section>
+        <section>
+            <h2>Recomendamos</h2>
+            <article>
+                <h3>Clau Reads Books (YouTube)</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zJCHM0bHtjg?si=KyNeG1DY7CsHW1zX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>Clau Rodriguez es una de las booktubers mas reconocidas de México y también es autora de varios libros de fantasía. Si aún no conoces su canal, no dudes en seguirla!</p>
+            </article>
+            <article>
+                <h3>BookUp (Bookstore)</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.6754038769864!2d-103.40061402481088!3d20.642083500947315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae0f0e8e51f1%3A0x251b834c341d31d1!2sBookUp%20Guadalajara!5e0!3m2!1sen!2sus!4v1744681793931!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Nuestra tienda favorita de libros en Guadalajara. Cuentan con una gran variedad de libros de fantasía y nuevos lanzamientos.</p>
+            </article>
+        </section>
+
+        <section>
+            <br>
+            <a href="#top">Volver al inicio</a>
+            <br><br>
+        </section>
+    </main>
+
+    <footer id="link-footer">
+        <p>© 2025 Booksy.</p>
+        <p>Síguenos</p>
+        <a href="https://www.instagram.com/"><img src="./img/icons8-instagram-48.png" alt="Instagram"></a>
+        <a href="https://www.tiktok.com/en/"><img src="./img/icons8-tik-tok-48.png" alt="Tik Tok"></a>
+        <a href="https://www.pinterest.com/"><img src="./img/icons8-pinterest-48.png" alt="Pinterest"></a>
+        <a href="https://www.facebook.com/"><img src="./img/icons8-facebook-48.png" alt="Facebook"></a>
+        <a href="https://www.youtube.com/"><img src="./img/icons8-youtube-48.png" alt="YouTube"></a>
+    </footer>
+
+    <!-- BEST PRACTICES 
+        - Usa Elementos Semánticos: <header>, <nav>, <article>, <section>, <footer>
+        - Jerarquía de Encabezados 
+        - Uso de comentarios para documentación y depuración
+        - Convenciones de nombrado
+            - nombres de archivo deben ser descriptivos y significativos
+            - minúsculas
+            - sin espacios, preferir guiones
+            - ids descriptivos y usando camel case o guiones
+    -->
+    
+</body>
+</html>

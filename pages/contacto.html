@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Lexend:wght@100..900&family=Lily+Script+One&display=swap" rel="stylesheet">
+
+    <title>Contacto | Booksy</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../img/booksy.png" alt="logo" class="logo"></a>
+        <h1>Contacto</h1>
+        <nav>
+            <!-- menu de navegación -->
+            <ul class="nav-menu">
+                <li><a href="../pages/lecturas.html">Lecturas del año</a></li>
+                <li><a href="../pages/lanzamientos.html">Lanzamientos del año</a></li>
+                <li><a href="../pages/wishlist.html">Wishlist</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje"></textarea>
+
+            <label for="genero">Genero:</label>
+            <select name="genero" id="genero">
+                <option value="desconocido">Prefiero no decirlo</option>
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+            </select>
+
+            <input type="checkbox" name="newsletter" id="newsletter"><label for="newsletter">Suscribirte al Newsletter</label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2025 Booksy.</p>
+        <p>Síguenos</p>
+        <a href="https://www.instagram.com/"><img src="../img/icons8-instagram-48.png" alt="Instagram"></a>
+        <a href="https://www.tiktok.com/en/"><img src="../img/icons8-tik-tok-48.png" alt="Tik Tok"></a>
+        <a href="https://www.pinterest.com/"><img src="../img/icons8-pinterest-48.png" alt="Pinterest"></a>
+        <a href="https://www.facebook.com/"><img src="../img/icons8-facebook-48.png" alt="Facebook"></a>
+        <a href="https://www.youtube.com/"><img src="../img/icons8-youtube-48.png" alt="YouTube"></a>
+    </footer>
+</body>
+</html>

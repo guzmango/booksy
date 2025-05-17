@@ -1,0 +1,88 @@
+/* CSS Reset */
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+/* -------- Propiedades generales -------- */
+body {
+    background-color: #d8d8ce;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: light;
+    color: #484241;
+}
+
+@font-face {
+    font-family: "wbeach";
+    src: url(../fonts/White\ Beach.otf);
+}
+
+/* -------- Header -------- */
+.logo {
+    height: 30vh;
+    /* width: 20vw; */
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-menu li {
+    list-style: none;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #6d7f94;
+}
+
+h1 {
+    color: #715594;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* -------- Contenido -------- */
+
+h2 {
+    color: #4b6689;
+    font-family: wbeach;
+    font-weight: 300;
+}
+
+a {
+    color: #73ab7d;
+}
+
+.img-carrousel {
+    height: 50vh;
+    width: 70vw;
+}
+
+.autor {
+    font-style: italic;
+}
+.negritas {
+    font-weight: bold;
+}
+
+.link-compra {
+    color: #4b6689;
+}
+
+.libros {
+    display: flex;
+    flex-flow: row;
+}
+
+/* -------- Footer -------- */
+footer {
+    color: #684d87;
+}
+/* .rrss {
+    height: 6vh;
+} */
