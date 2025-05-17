@@ -1,8 +1,8 @@
 /* CSS Reset */
-/* * {
+* {
     margin: 0;
     padding: 0;
-} */
+}
 
 /* -------- Propiedades generales -------- */
 body {
@@ -40,14 +40,13 @@ body {
 .contenedor-banner {
     grid-area: banner;
 
-
     display: grid;
     grid-template-areas: 
         "logo navbar"
         "titulo titulo";
     align-items: center;
     column-gap: 20px;
-    
+    row-gap: 10px;
 }
 
 .logo {
@@ -116,9 +115,10 @@ a {
 
 .boton-volver {
     display: block;
-    padding: 10px;
     text-align: right;
-    margin-top: 40px;
+    position: sticky;
+    bottom: 40px;
+    color:#715594;
 }
 
 /* -------- Contenido Index -------- */
@@ -181,24 +181,52 @@ a {
 }
 
 /* -------- Contenido Lecturas -------- */
+.botones-grid {
+    text-align: right;
+    margin-right: 40px;
+}
+
+.libros {
+    display: flex;
+    flex-flow: row;
+    gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.libros article {
+    min-width: 20vw;
+    max-width: 25vw;
+}
+
+.libros article h2, p {
+    padding: 10px 0;
+}
+
+.rating-libro {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
 
 .autor {
     font-style: italic;
 }
 
 .link-compra {
+    height: 24px;
+    text-align: center;
+}
+.link-compra a {
     color: #4b6689;
 }
 
-.libros {
-    display: flex;
-    flex-flow: row;
-    margin: 20px 0;
+.link-compra img {
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
-.libros article {
-    margin-right: 20px;
-}
+
 
 /* -------- Footer -------- */
 footer {
@@ -211,6 +239,7 @@ footer {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    padding: 15px;
 }
 
 .copyright {
@@ -230,4 +259,63 @@ footer {
 .rrss a {
     display: inline-block;
     margin-left: 5px;
+}
+
+/* -------- Responsive design -------- */
+@media (max-width: 640px) {
+    body {
+        height: 100%;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        grid-area: navbar;
+        margin-right: 30px;
+    }
+
+    .nav-menu li {
+        margin: 0;
+    }
+
+    .contenido-index {
+        /* Layout de la sección principal usando Grids */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boton-volver {
+        position: sticky;
+        bottom: 50px;
+        right: 30px;
+    }
+
+    .lanzamientos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .libros {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .libros article {
+        max-width: 90vw;
+        text-align: center;
+    }
+
+    .link-compra {
+        height: 24px;
+        text-align: center;
+    }
 }
