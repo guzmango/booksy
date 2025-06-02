@@ -60,6 +60,18 @@ a {
   bottom: 40px;
   color: #715594;
 }
+.boton-volver:hover {
+  opacity: 0;
+  animation: fade-in 2s infinite;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media (max-width: 640px) {
   .boton-volver {
     bottom: 50px;
@@ -85,6 +97,10 @@ a {
 .logo img {
   height: 20vh;
   width: auto;
+}
+.logo img:hover {
+  animation: tada;
+  animation-duration: 2s;
 }
 
 .nav-menu {

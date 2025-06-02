@@ -70,6 +70,16 @@ a {
     bottom: 40px;
     color: $link-color-volver;
 
+    &:hover {
+        opacity: 0;
+        animation: fade-in 2s infinite;
+    }
+
+    @keyframes fade-in {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
     @include responsive {
         bottom: 50px;
         right: 30px;

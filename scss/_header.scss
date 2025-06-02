@@ -19,6 +19,11 @@
     img {
         height: $logo-height;
         width: auto;
+
+        &:hover {
+            animation: tada;
+            animation-duration: 2s;
+        }
     }
 }
 
