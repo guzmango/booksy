@@ -1,0 +1,31 @@
+/* -------- Footer -------- */
+footer {
+    color: $font-color-footer;
+}
+
+.contenedor-footer {
+    @include flex-row(space-between);
+    grid-area: footer;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.copyright {
+    height: 75px;
+    line-height: 100px;
+    text-wrap-mode: nowrap;
+}
+
+.rrss {
+    padding: 0 20px;
+    padding-bottom: 15px;
+
+    p {
+        text-align: center;
+    }
+
+    a {
+        display: inline-block;
+        margin-left: 5px;
+    }
+}

@@ -1,0 +1,47 @@
+$background-color: #d8d8ce;
+
+$font-color-body: #484241;
+$font-color-header: #6d7f94;
+$font-color-title: #715594;
+$font-color-subtitle: #4b6689;
+$font-color-footer: #684d87;
+
+$link-color: #73ab7d;
+$link-color-volver: #715594;
+$link-color-comprar: #4b6689;
+
+$link-height-comprar: 24px;
+
+$logo-height: 20vh;
+$logo-width: 20vw;
+
+$default-gap: 20px;
+
+$default-margin: 10px;
+
+@mixin flex-row ($justify-content: space-evenly, $wrap: nowrap, $gap: 0px) {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: $wrap;
+    justify-content: $justify-content;
+    gap: $gap;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin responsive {
+    @media (max-width: 640px) {
+        @content
+    }
+}
+
+@mixin responsive-layout {
+    @media (max-width: 640px) {
+        @include flex-column;
+        @content
+    }
+}
+

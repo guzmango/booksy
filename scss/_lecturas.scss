@@ -1,0 +1,55 @@
+/* -------- Contenido Lecturas -------- */
+.botones-grid {
+    text-align: right;
+    margin-right: 40px;
+    margin-bottom: $default-gap;
+}
+
+.libros {
+    @include flex-row(space-evenly, wrap, $default-gap);
+    margin-bottom: 30px;
+
+    @include responsive-layout {
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+    }
+
+    article {
+        min-width: 20vw;
+        max-width: 25vw;
+
+        @include responsive {
+            max-width: 90vw;
+            text-align: center;
+        }
+
+        h2, p {
+            padding: 10px 0;
+        }
+    }
+}
+
+.rating-libro {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.autor {
+    font-style: italic;
+}
+
+.link-compra {
+    height: $link-height-comprar;
+    text-align: center;
+
+    a {
+        color: $link-color-comprar;
+    }
+
+    img {
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+}

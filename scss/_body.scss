@@ -1,0 +1,77 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $background-color;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: light;
+    color:$font-color-body;
+    padding-left: 10px;
+
+    /* Layout Grid */
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "banner"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "footer"
+    ;
+
+    @include responsive-layout {
+        height: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+}
+
+@font-face {
+    font-family: "wbeach";
+    src: url(../fonts/White\ Beach.otf);
+}
+
+/* -------- Contenido General -------- */
+.contenedor-contenido {
+    grid-area: main;
+    margin-top: $default-margin;
+    padding: $default-gap;
+}
+
+h2 {
+    color: $font-color-subtitle;
+    font-family: wbeach;
+    font-weight: 300;
+}
+
+a {
+    color: $link-color;
+}
+
+.negritas {
+    font-weight: bold;
+}
+
+.boton-volver {
+    display: block;
+    text-align: right;
+    position: sticky;
+    bottom: 40px;
+    color: $link-color-volver;
+
+    @include responsive {
+        bottom: 50px;
+        right: 30px;
+    }
+}

@@ -1,0 +1,63 @@
+/* -------- Header -------- */
+.contenedor-banner {
+    grid-area: banner;
+
+    display: grid;
+    grid-template-areas: 
+        "logo navbar"
+        "titulo titulo";
+    align-items: center;
+    column-gap: $default-gap;
+    row-gap: 10px;
+}
+
+.logo {
+    height: $logo-height;
+    width: $logo-width;
+    grid-area: logo;
+
+    img {
+        height: $logo-height;
+        width: auto;
+    }
+}
+
+.nav-menu {
+    @include flex-row(flex-end);
+    grid-area: navbar;
+    margin-right: 30px;
+
+    li {
+        list-style: none;
+        padding: 10px;
+        margin-right: $default-gap;
+        text-wrap-mode: nowrap;
+
+        @include responsive {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: $font-color-header;
+        }
+    }
+
+    @include responsive-layout {
+        align-items: flex-end;
+    }
+
+}
+
+.titulo {
+    grid-area: titulo;
+    margin: 0;
+    padding-left: $default-gap;
+}
+
+h1 {
+    color: $font-color-title;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
