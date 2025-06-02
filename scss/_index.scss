@@ -19,6 +19,11 @@
     grid-row-start: 2;
 }
 
+.img-wide {
+    width: 100%;
+    height: auto;
+}
+
 .lanzamientos {
     @include flex-row(space-evenly, $gap: 10px);
     margin-top: 40px;
@@ -28,8 +33,7 @@
     }
 
     img {
-        width: 100%;
-        height: auto;
+        @extend .img-wide;
     }
 
     span {
@@ -58,12 +62,10 @@
 }
 
 .rec-frame {
-    width: 100%;
-    height: auto;
+    @extend .img-wide;
 }
 
 .img-carrousel {
-    height: auto;
-    width: 100%;
+    @extend .img-wide;
     margin-top: 40px;
 }
