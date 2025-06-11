@@ -33,7 +33,10 @@
     }
 
     img {
-        @extend .img-wide;
+        max-width: 60%;
+        height: auto;
+        margin: auto;
+        display: block;
     }
 
     span {

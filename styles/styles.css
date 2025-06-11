@@ -6,12 +6,12 @@
 }
 
 body {
-  background-color: #d8d8ce;
+  background-color: #faf8f8;
   font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: light;
-  color: #484241;
+  color: #4a5759;
   padding-left: 10px;
   /* Layout Grid */
   height: 100vh;
@@ -40,13 +40,13 @@ body {
 }
 
 h2 {
-  color: #4b6689;
+  color: #b0c4b1;
   font-family: wbeach;
   font-weight: 300;
 }
 
 a {
-  color: #73ab7d;
+  color: #edafb8;
 }
 
 .negritas {
@@ -125,7 +125,7 @@ a {
 }
 .nav-menu li a {
   text-decoration: none;
-  color: #6d7f94;
+  color: #4a5759;
 }
 @media (max-width: 640px) {
   .nav-menu {
@@ -142,7 +142,7 @@ a {
 }
 
 h1 {
-  color: #715594;
+  color: #edafb8;
   font-family: "Boldonse", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -173,7 +173,7 @@ h1 {
   grid-row-start: 2;
 }
 
-.img-wide, .img-carrousel, .rec-frame, .lanzamientos img {
+.img-wide, .img-carrousel, .rec-frame {
   width: 100%;
   height: auto;
 }
@@ -192,6 +192,12 @@ h1 {
     flex-direction: column;
     align-items: center;
   }
+}
+.lanzamientos img {
+  max-width: 60%;
+  height: auto;
+  margin: auto;
+  display: block;
 }
 .lanzamientos span {
   display: block;
@@ -224,6 +230,9 @@ h1 {
   margin-right: 40px;
   margin-bottom: 20px;
 }
+.botones-grid i {
+  font-size: 1.5em;
+}
 
 .libros {
   display: flex;
@@ -255,6 +264,9 @@ h1 {
 .libros article h2, .libros article p {
   padding: 10px 0;
 }
+.libros article img {
+  max-width: 50%;
+}
 
 .rating-libro {
   display: block;
@@ -280,7 +292,7 @@ h1 {
 
 /* -------- Footer -------- */
 footer {
-  color: #684d87;
+  color: #4a5759;
 }
 
 .contenedor-footer {
@@ -310,6 +322,10 @@ footer {
 .rrss a {
   display: inline-block;
   margin-left: 5px;
+  color: #b6b1b2;
+}
+.rrss a i {
+  font-size: 2.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

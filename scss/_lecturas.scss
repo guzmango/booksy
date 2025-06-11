@@ -3,6 +3,10 @@
     text-align: right;
     margin-right: 40px;
     margin-bottom: $default-gap;
+    
+    i {
+        font-size: 1.5em;
+    }
 }
 
 .libros {
@@ -26,6 +30,10 @@
 
         h2, p {
             padding: 10px 0;
+        }
+
+        img {
+            max-width: 50%;
         }
     }
 }
