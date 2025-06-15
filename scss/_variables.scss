@@ -1,25 +1,19 @@
-$background-color: #faf8f8;
+$palette-color-1: #EDAFB8;
+$palette-color-2: #F7E1D7;
+$palette-color-3: #DEDBD2;
+$palette-color-4: #B0C4B1;
+$palette-color-5: #4A5759;
+$palette-color-extra-1: #B6B1B2;
+$palette-color-extra-2: #E7E7E7;
+$palette-color-extra-3: #95B0B4;
 
-$font-color-body: #4a5759;
-$font-color-header: #4a5759;
-$font-color-title: #edafb8;
-$font-color-subtitle: #b0c4b1;
-$font-color-footer: #4a5759;
-
-$link-color: #edafb8;
-$link-color-hover: #f7e1d7;
-$link-color-volver: #715594;
-$link-color-comprar: #4b6689;
-$link-color-footer: #b6b1b2;
-
-$link-height-comprar: 24px;
+$background-color: #FAF8F8;
 
 $logo-height: 20vh;
 $logo-width: 20vw;
 
 $default-gap: 20px;
-
-$default-margin: 10px;
+$default-margin: 30px;
 
 @mixin flex-row ($justify-content: space-evenly, $wrap: nowrap, $gap: 0px) {
     display: flex;

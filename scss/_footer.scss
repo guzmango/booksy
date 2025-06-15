@@ -1,13 +1,19 @@
 /* -------- Footer -------- */
 footer {
-    color: $font-color-footer;
+    color: $palette-color-extra-1;
+}
+
+.separador-hor {
+    width: 80%;
+    border-top: 1px solid $palette-color-extra-2;
+    margin: auto;
 }
 
 .contenedor-footer {
     @include flex-row(space-between);
     grid-area: footer;
     margin-top: 10px;
-    padding: 15px;
+    padding: 15px 25px;
 }
 
 .copyright {
@@ -27,7 +33,11 @@ footer {
     a {
         display: inline-block;
         margin-left: 5px;
-        color: $link-color-footer;
+        color: $palette-color-extra-1;
+
+        &:hover {
+            color: $palette-color-3;
+        }
         
         i {
             font-size: 2.5rem;

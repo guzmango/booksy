@@ -11,7 +11,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Lexend:wght@100..900&family=Lily+Script+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Lexend:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <title>Home | Booksy</title>
@@ -44,6 +44,7 @@
             <section class="seccion-favs">
                 <h2>Libros Favoritos del Año</h2>
                 <p>Estos son nuestros libros favoritos en lo que va del año.</p>
+                <p>En la sección <a href="pages/lecturas.html"><i class="bi bi-bookmark-star"></i>Lecturas del Año</a> podrás encontrar todos los libros que hemos leído en 2025.</p>
 
                 <div id="carruselHomeFavoritos" class="carousel slide">
                     <div class="carousel-indicators">
@@ -57,13 +58,13 @@
                             <img src="img/portadas/eyes.webp" class="d-block w-100" alt="The Eyes Are The Best Part">
                         </div>
                         <div class="carousel-item">
+                            <img src="img/portadas/here.webp" class="d-block w-100" alt="We Used to Live Here">
+                        </div>
+                        <div class="carousel-item">
                             <img src="img/portadas/house.webp" class="d-block w-100" alt="How to Sell a Haunted House">
                         </div>
                         <div class="carousel-item">
                             <img src="img/portadas/relic.webp" class="d-block w-100" alt="Relic">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/portadas/moves.webp" class="d-block w-100" alt="What Moves the Dead">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carruselHomeFavoritos" data-bs-slide="prev">
@@ -84,57 +85,75 @@
                 <div class="lanzamientos">
                     <article>
                         <img src="./img/portadas/witchcraft.webp" alt="Witchcraft for Wayward Girls">
-                        <span class="negritas">Witchcraft for Wayward Girls</span>
-                        <span>14 de Enero, 2025</span>
+                        <div>
+                            <span class="negritas">Witchcraft for Wayward Girls</span>
+                            <span class="fecha">14 de Enero, 2025</span>
+                        </div>
                     </article>
                     
                     <article>
                         <img src="./img/portadas/psycho.webp" alt="Victorian Psycho">
-                        <span class="negritas">Victorian Psycho</span>
-                        <span>04 de Febrero, 2025</span>
+                        <div>
+                            <span class="negritas">Victorian Psycho</span>
+                            <span class="fecha">04 de Febrero, 2025</span>
+                        </div>
                     </article>
         
                     <article>
                         <img src="./img/portadas/buffalo.webp" alt="The Buffalo Hunter Hunter">
-                        <span class="negritas">The Buffalo Hunter Hunter</span>
-                        <span>18 de Marzo, 2025</span>
+                        <div>
+                            <span class="negritas">The Buffalo Hunter Hunter</span>
+                            <span class="fecha">18 de Marzo, 2025</span>
+                        </div>
                     </article>
         
                     <article>
                         <img src="./img/portadas/blood.webp" alt="Blood on Her Tongue">
-                        <span class="negritas">Blood on Her Tongue</span>
-                        <span>25 de Marzo, 2025</span>
+                        <div>
+                            <span class="negritas">Blood on Her Tongue</span>
+                            <span class="fecha">25 de Marzo, 2025</span>
+                        </div>
                     </article>
                 </div>
             </section>
             <section class="seccion-recs">
                 <h2>Recomendamos</h2>
                 <article>
-                    <h3>Clau Reads Books (YouTube)</h3>
+                    <h3><i class="bi bi-play-btn"></i> Clau Reads Books (YouTube)</h3>
                     <iframe src="https://www.youtube.com/embed/zJCHM0bHtjg?si=KyNeG1DY7CsHW1zX" title="YouTube video player" frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rec-frame"></iframe>
                     <p>Clau Rodriguez es una de las booktubers mas reconocidas de México y también es autora de varios libros de fantasía. Si aún no conoces su canal, no dudes en seguirla!</p>
                 </article>
                 <article>
-                    <h3>BookUp (Bookstore)</h3>
+                    <h3><i class="bi bi-shop"></i> BookUp (Bookstore)</h3>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.6754038769864!2d-103.40061402481088!3d20.642083500947315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae0f0e8e51f1%3A0x251b834c341d31d1!2sBookUp%20Guadalajara!5e0!3m2!1sen!2sus!4v1744681793931!5m2!1sen!2sus" 
                             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rec-frame"></iframe>
                     <p>Nuestra tienda favorita de libros en Guadalajara. Cuentan con una gran variedad de libros de fantasía y nuevos lanzamientos.</p>
+                    <a href="https://www.bookup.com.mx/"><i class="bi bi-link-45deg"></i> Website</a>
+                </article>
+                <article>
+                    <h3><i class="bi bi-globe"></i> The Storygraph</h3>
+                    <img src="img/storygraph-logo.jpg" alt="The Storygraph">
+                    <p>Es una red social para amantes de la lectura. En ella podrás crear listas de libros, unirte a retos de lectura, readalongs y giveaways. También tienen una app que puedes descargar en tu teléfono.</p>
+                    <a href="https://app.thestorygraph.com/"><i class="bi bi-link-45deg"></i> Website</a>
                 </article>
             </section>
         </div>
-        <a href="#top" class="boton-volver">Volver al inicio</a>
+        <a href="#top" class="boton-volver"><i class="bi bi-arrow-up-circle"></i> Volver al inicio</a>
     </main>
 
-    <footer id="link-footer" class="contenedor-footer">
-        <p class="copyright">© 2025 Booksy.</p>
-        <div class="rrss">
-            <p>Síguenos</p>
-            <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.tiktok.com/en/"><i class="bi bi-tiktok"></i></a>
-            <a href="https://www.pinterest.com/"><i class="bi bi-pinterest"></i></a>
-            <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
+    <footer id="link-footer">
+        <div class="separador-hor"></div>
+        <div class="contenedor-footer">
+            <p class="copyright">© 2025 Booksy.</p>
+            <div class="rrss">
+                <p>Síguenos</p>
+                <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.tiktok.com/en/"><i class="bi bi-tiktok"></i></a>
+                <a href="https://www.pinterest.com/"><i class="bi bi-pinterest"></i></a>
+                <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
+            </div>
         </div>
     </footer>
 

@@ -38,13 +38,28 @@
         margin-right: $default-gap;
         text-wrap-mode: nowrap;
 
+        font-family: "Roboto Condensed", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: large;
+
         @include responsive {
             margin: 0;
         }
 
         a {
             text-decoration: none;
-            color: $font-color-header;
+            color: $palette-color-5;
+
+            &:hover {
+                color: $palette-color-4;
+                border: 2px solid $palette-color-4;
+                padding: 10px 25px;
+                font-family: nickainley;
+                text-transform: none;
+            }
         }
     }
 
@@ -61,8 +76,15 @@
 }
 
 h1 {
-    color: $font-color-title;
-    font-family: "Boldonse", system-ui;
+    color: $palette-color-1;
     font-weight: 400;
     font-style: normal;
+    text-align: center;
+
+    font-family: roundrope;
+    font-size: 80px;
+
+    @include responsive {
+        font-size: revert;
+    }
 }

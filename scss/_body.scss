@@ -10,7 +10,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: light;
-    color:$font-color-body;
+    color:$palette-color-5;
     padding-left: 10px;
 
     /* Layout Grid */
@@ -38,29 +38,54 @@ body {
 }
 
 @font-face {
-    font-family: "wbeach";
-    src: url(../fonts/White\ Beach.otf);
+    font-family: "nickainley";
+    src: url(../fonts/Nickainley-Normal.otf);
+}
+@font-face {
+    font-family: "roundrope";
+    src: url(../fonts/RoundRope.ttf);
 }
 
 /* -------- Contenido General -------- */
 .contenedor-contenido {
     grid-area: main;
-    margin-top: $default-margin;
-    padding: $default-gap;
+    padding: 20px 50px;
+}
+
+.descripcion-pagina {
+    text-align: center;
 }
 
 h2 {
-    color: $font-color-subtitle;
-    font-family: wbeach;
-    font-weight: 300;
+    color: $palette-color-4;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
 }
 
 a {
-    color: $link-color;
+    color: $palette-color-1;
+}
+
+.img-centro {
+    display: block;
+    margin: auto;
+    height: auto;
+
+    &:hover {
+        animation: pulse;
+        animation-duration: 2s;
+    }
 }
 
 .negritas {
     font-weight: bold;
+}
+
+.cursivas {
+    font-style: italic;
 }
 
 .boton-volver {
@@ -68,7 +93,7 @@ a {
     text-align: right;
     position: sticky;
     bottom: 40px;
-    color: $link-color-volver;
+    text-decoration: none;
 
     &:hover {
         opacity: 0;

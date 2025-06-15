@@ -1,11 +1,20 @@
 /* -------- Contenido Lecturas -------- */
 .botones-grid {
+    color: $palette-color-extra-3;
+    font-size: 15px;
     text-align: right;
     margin-right: 40px;
     margin-bottom: $default-gap;
+    cursor: pointer;
+
+    &:hover {
+        color: $palette-color-extra-1;
+    }
     
     i {
         font-size: 1.5em;
+        vertical-align: middle;
+        padding: 0 5px;
     }
 }
 
@@ -20,44 +29,117 @@
     }
 
     article {
+        background-color: #fff;
         min-width: 20vw;
         max-width: 25vw;
+        text-align: center;
+        padding: 20px;
 
         @include responsive {
             max-width: 90vw;
-            text-align: center;
         }
 
-        h2, p {
+        p {
+            font-family: "Arimo", sans-serif;
             padding: 10px 0;
+            line-height: 150%;
+            font-size: 14px;
+        }
+
+        .autor {
+            font-family: nickainley;
+            color: $palette-color-extra-1;
+            font-size:20px;
         }
 
         img {
             max-width: 50%;
+            @extend .img-centro;
+        }
+
+        .rating-libro {
+            color: $palette-color-1;
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+
+        .link-compra {
+            display: inline-block;
+            height: 24px;
+            text-align: center;
+        
+            i {
+                margin-right: 5px;
+            }
+        
+            a {
+                color: $palette-color-extra-3;
+                font-size: 14px;
+        
+                &:hover {
+                    color: $palette-color-2;
+                    font-family: nickainley;
+                    font-size: 16px;
+                    text-decoration: none;
+                }
+            }
+        
+            img {
+                margin-right: 10px;
+                vertical-align: middle;
+            }
+        }
+
+        
+    }
+}
+
+.libros-horizontal {
+    @extend .libros;
+
+    article {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        min-width: 80vw;
+        max-width: 90vw;
+
+        @include responsive {
+            flex-direction: column;
+            min-width: auto;
+        }
+
+        img {
+            display: block;
+            margin: 0;
+            width: 20%;
+            min-width: 240px;
+            padding: 20px;
+        }
+
+        .libro-descripcion {
+            max-width:65vw;
+            padding: 20px;
+        }
+
+        .fecha-lanzamiento, .tags {
+            color: $palette-color-extra-3;
+        }
+
+        .link-libro {
+            @extend .link-compra;
+            padding: 0 10px;
+
+            a {
+                color: $palette-color-1;
+            }
+            
         }
     }
 }
 
-.rating-libro {
-    display: block;
-    text-align: center;
-    margin: auto;
-}
 
-.autor {
-    font-style: italic;
-}
 
-.link-compra {
-    height: $link-height-comprar;
-    text-align: center;
 
-    a {
-        color: $link-color-comprar;
-    }
 
-    img {
-        margin-right: 10px;
-        vertical-align: middle;
-    }
-}

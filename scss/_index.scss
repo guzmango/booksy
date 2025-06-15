@@ -3,17 +3,38 @@
     /* Layout de la sección principal usando Grids */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     gap: 30px;
 
     @include responsive-layout
 }
 
+.seccion {
+    background-color: #fff;
+    padding: 40px;
+}
+
 .seccion-favs {
+    @extend .seccion;
     grid-column: span 2 / span 2;
+
+    a {
+        color: $palette-color-extra-3;
+
+        i {
+            padding-right: 5px;
+        }
+    }
+}
+
+#carruselHomeFavoritos {
+    max-width: 65%;
+    margin: auto;
+    padding: 10px;
 }
 
 .seccion-lanzamientos {
+    @extend .seccion;
     grid-column: span 2 / span 2;
     grid-column-start: 1;
     grid-row-start: 2;
@@ -33,33 +54,55 @@
     }
 
     img {
+        @extend .img-centro;
         max-width: 60%;
-        height: auto;
-        margin: auto;
-        display: block;
+    }
+
+    div {
+        padding-top: 10px;
     }
 
     span {
         display: block;
         text-align: center;
     }
+
+    .fecha {
+        font-family: "Arimo", sans-serif;
+        font-size: 14px;
+    }
 }
 
 .seccion-recs {
+    padding: 40px;
     grid-row: span 2 / span 2;
     grid-column-start: 3;
     grid-row-start: 1;
+    text-align: center;
 
     article {
+        border-bottom: 1px solid $palette-color-extra-2;
         margin-bottom: 30px;
         padding: 15px;
 
         h3 {
             margin-bottom: $default-margin;
+            font-family: nickainley;
         }
 
         p {
             margin-top: $default-margin;
+        }
+
+        a {
+            display: inline-block;
+            margin-bottom: 15px;
+            color: $palette-color-extra-1;
+            text-decoration: none;
+
+            &:hover {
+                color: $palette-color-3;
+            }
         }
     }
 }
@@ -67,8 +110,3 @@
 .rec-frame {
     @extend .img-wide;
 }
-
-// .img-carrousel {
-//     @extend .img-wide;
-//     margin-top: 40px;
-// }
