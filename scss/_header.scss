@@ -12,11 +12,13 @@
 }
 
 .logo {
-    height: $logo-height;
-    width: $logo-width;
+    display: block;
+    height: auto;
+    width: fit-content;
     grid-area: logo;
 
     img {
+        display: block;
         height: $logo-height;
         width: auto;
 
